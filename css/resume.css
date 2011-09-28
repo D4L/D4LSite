@@ -7,7 +7,7 @@ h3 {
 }
 
 #bodyContainer {
-    width: 800px;
+    width: 750px;
 }
 
 #infoSection {
@@ -25,23 +25,45 @@ h3 {
 }
 
 #localAddress {
-    width: 33%;
+    width: 30%;
     float: left;
 }
 
 #instantContact {
     float: left;
-    width: 33%;
+    width: 40%;
 }
 
 #permanantAddress {
     float: left;
-    width: 33%;
+    width: 30%;
 }
 
 .genericSection {
+    width: 90%;
+    margin: auto;
+}
+
+.genericSection li {
+    margin-bottom: 5px;
 }
 
 .subSectionTitle {
     font-weight: bold;
+}
+
+.relevantTitle {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.relevantSubtitle {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.schoolListing ul {
+    margin-top: 0px;
 }
