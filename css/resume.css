@@ -13,11 +13,20 @@ h3 {
 
 #commentary {
     background-color: pink;
+    font-family: Monaco;
+    font-size: 12px;
     padding: 10px;
     float: left;
-    opacity: 0.7;
     border-radius: 10px;
-    margin-top: 40px;
+    margin: 40px 0px 0px 10px;
+}
+
+.commentaryChanger {
+    background-color: pink;
+    border-radius: 2px;
+    font-family: Monaco;
+    padding: 2px;
+    font-size: 13px;
 }
 
 #infoSection {
@@ -66,14 +75,11 @@ h3 {
 
 .relevantTitle {
     font-weight: bold;
-    margin-bottom: 0px;
-    margin-left: 20px;
+    margin: 0px 0px 0px 20px;
 }
 
 .relevantSubtitle {
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-top: 0px;
+    margin: 0px 0px 0px 20px;
 }
 
 .schoolListing ul {
@@ -84,9 +90,8 @@ h3 {
     border-left: solid black thick;
 }
 
-.commentaryChanger {
-    background-color: pink;
-    background-opacity: 0.8;
-    border-radius: 2px;
-    padding: 2px;
+h1.commentaryChanger {
+  background-color: transparent;
+  text-decoration: underline;
 }
+

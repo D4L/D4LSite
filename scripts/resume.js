@@ -3,6 +3,7 @@ var resumeCommentary = {};
 $.getJSON('../data/resumeCommentary.json', function(data) {
   $.each(data, function(key, val) {
     resumeCommentary[key] = val;
+    alert(val);
   });
 });
 
@@ -22,6 +23,7 @@ function changeCommentary(picker) {
     opacity: 0
   }, 200, function(){
     $(this).text(resumeCommentary[picker]);
+    $(this).attr("tag",picker);
   }).animate({
     opacity: 0.7
   }, 200);
@@ -51,6 +53,8 @@ $(document).ready(function () {
   });
 
   $('.commentaryChanger').mouseenter(function () {
-    changeCommentary($(this).attr('picker'));
+    if ($('#commentary').attr("tag") != $(this).attr('picker')) {
+      changeCommentary($(this).attr('picker'));
+    }
   });
 });
