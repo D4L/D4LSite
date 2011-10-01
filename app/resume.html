@@ -2,6 +2,8 @@
   <head>
     <title>Austin Lee's Resume</title>
     <link rel="stylesheet" type="text/css" href="../css/resume.css">
+    <script type="text/javascript" src="../scripts/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="../scripts/resume.js"></script>
   </head>
   <body>
     <div id="bodyContainer">
@@ -19,7 +21,7 @@
           </div>
           <div id="instantContact">
             <br/>
-            <span class="subSectionTitle">Website:</span> csclub.uwaterloo.ca/~aj5lee/D4LSite
+            <span class="subSectionTitle">Website:</span> <span class="commentaryChanger" picker="site">csclub.uwaterloo.ca/~aj5lee/D4LSite</span>
             <span class="subSectionTitle">Email:</span> aj5lee@uwaterloo.ca<br/>
             <span class="subSectionTitle">Cell:</span> 519 729 9647
           </div>
@@ -113,10 +115,13 @@
           </ul>
           <li>Enjoy web design, computer games, flash animations
           <li>Solve Porject Euler problems using different languages for fun
-          <li>Spend spare time reading GEB, studying game theory and combinatorics
+          <li>Spend spare time reading <span class="commentaryChanger" picker="geb">GEB</span>, studying game theory and combinatorics
           <li>Plays piano, chess, and Magic The Gathering
         </ul>
       </div>
+    </div>
+    <div id="commentary">
+      Hi, welcome to my resume. I'm going to be your resume guide, all you have to do is hover over the keywords and I will provide a slightly informal discussion about the topic.
     </div>
   </body>
 </html>

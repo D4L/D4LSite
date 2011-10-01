@@ -8,6 +8,16 @@ h3 {
 
 #bodyContainer {
     width: 750px;
+    float: left;
+}
+
+#commentary {
+    background-color: pink;
+    padding: 10px;
+    float: left;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
 #infoSection {
@@ -18,6 +28,7 @@ h3 {
 }
 
 #contactInfo {
+    overflow: auto;
 }
 
 #contactInfo h3 {
@@ -40,6 +51,7 @@ h3 {
 }
 
 .genericSection {
+    padding-left: 10px;
     width: 90%;
     margin: auto;
 }
@@ -66,4 +78,15 @@ h3 {
 
 .schoolListing ul {
     margin-top: 0px;
+}
+
+.selectedSection {
+    border-left: solid black thick;
+}
+
+.commentaryChanger {
+    background-color: pink;
+    background-opacity: 0.8;
+    border-radius: 2px;
+    padding: 2px;
 }
