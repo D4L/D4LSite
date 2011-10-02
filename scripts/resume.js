@@ -3,30 +3,33 @@ var resumeCommentary = {};
 $.getJSON('../data/resumeCommentary.json', function(data) {
   $.each(data, function(key, val) {
     resumeCommentary[key] = val;
-    alert(val);
   });
 });
 
 //This is most of the commentary functions
 function resizeCommentary () {
-    commentaryWidth = $('body').width() - $('#bodyContainer').width() - 50;
+    commentaryWidth = $('body').width() - $('#resumeContainer').width() - 50;
     $('#commentary').width(commentaryWidth);
 };
 function followScroll() {
-  $('#commentary').stop().animate({
+  $('#commentary').clearQueue().animate({
     marginTop: $(window).scrollTop() + 40
   }, 200);
   //$('#commentary').css('margin-top',$(window).scrollTop());
 };
 function changeCommentary(picker) {
+  moveLength = $('#commentary').width();
   $('#commentary').animate({
-    opacity: 0
-  }, 200, function(){
+    opacity: 0,
+    marginLeft: moveLength
+  }, 300, function(){
     $(this).text(resumeCommentary[picker]);
     $(this).attr("tag",picker);
-  }).animate({
-    opacity: 0.7
-  }, 200);
+    $(this).animate({
+      opacity: 1,
+      marginLeft: 10
+    }, 300);
+  });
 };
 
 //This stuff will run when document is loaded

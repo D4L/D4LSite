@@ -6,14 +6,18 @@ h3 {
     font-size: 16px;
 }
 
-#bodyContainer {
+#completeContainer {
+  width: 200%;
+}
+
+#resumeContainer{
     width: 750px;
     float: left;
 }
 
 #commentary {
     background-color: pink;
-    font-family: Monaco;
+    font-family: Monaco, Arial, Verdana;
     font-size: 12px;
     padding: 10px;
     float: left;
@@ -93,5 +97,6 @@ h3 {
 h1.commentaryChanger {
   background-color: transparent;
   text-decoration: underline;
+  font-size: 22px;
 }
 
