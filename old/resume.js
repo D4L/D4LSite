@@ -1,6 +1,6 @@
 //SET the commentary text constants
 var resumeCommentary = {};
-$.getJSON('../data/resumeCommentary.json', function(data) {
+$.getJSON('resumeCommentary.json', function(data) {
   $.each(data, function(key, val) {
     resumeCommentary[key] = val;
   });
