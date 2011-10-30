@@ -3,3 +3,8 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+config/database.yml
