@@ -114,5 +114,6 @@ DEPENDENCIES
   json
   mysql2
   rails (= 3.1.0)
+  sass
   sass-rails (~> 3.1.0)
   uglifier
